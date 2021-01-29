@@ -1,0 +1,88 @@
+table{
+    margin:auto;
+    border-collapse: collapse;
+    margin-top:100px;
+  }
+
+td{
+    background-color:	#e6e6e6;
+    width: 20px;
+    height: 80px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+td:nth-child(2n+1){
+    border-left: 1px dashed;
+}
+
+td:nth-child(2n){
+    border-left: 1px solid;
+}
+
+#zaglavlje{
+    height: 20px;
+}
+
+
+th:first-of-type{
+    text-align:right;
+}
+
+th{
+    border-top:hidden;
+    border-left:hidden;
+    border-right:hidden;
+    background-color: white;
+    font-family: Courier;
+    font-size:15px;
+    padding-left:7px;
+    text-align:left;
+    font-weight: normal;
+}
+
+
+td:first-of-type{
+    width: 130px;
+    background-color:white;
+    border-left:hidden;
+    border-top:hidden;
+    border-bottom:hidden;
+    text-align:right;
+    padding:0px;
+    padding-right:20px;
+    font-family: Courier;
+    font-size:20px;
+    font-weight: normal;
+}
+
+td:last-of-type{
+    border-right:1px solid black;
+}
+
+.oznaceno, #rightdashed, .leftsolid, .rightsolid{
+    background-color: #dee7f0;
+} 
+
+#rightdashed{
+    border-right:1px dashed;
+} 
+
+#rightdashed + td{
+    border-left:1px dashed;
+}
+ 
+.leftsolid{
+    border-left:1px solid black;
+}
+
+.rightsolid{
+    border-right: 1px solid black;
+}
+
+#lsolid{
+    border-left:1px solid black;
+    background-color: #dee7f0;
+}

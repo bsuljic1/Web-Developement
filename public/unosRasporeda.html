@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="stil3.css">
+    <TITLE>Spirala 3, Zadatak 4</TITLE>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</HEAD>
+<BODY onload="ucitaj()">
+    <div class="forma">
+   <form id="forma">
+       <label>Naziv predmeta:</label>
+       <input type="text" name="naziv"> <br>
+       <label>Naziv grupe:</label>
+       <input type="text" name="grupa"> <br>
+       <label>Tip:</label>
+       <select name="tip">
+            <option>Predavanje</option>
+            <option>Vježbe</option>
+       </select>
+        <br>
+       <label>Vrijeme početka:</label>
+       <input type="number" name="pocetak" step="0.5" min='8'> <br>
+       <label>Vrijeme kraja:</label>
+       <input type="number" name="kraj" step="0.5" max='20'> <br>
+       <label>Dan:</label>
+       <select name="dan">
+            <option>Ponedjeljak</option>
+            <option>Utorak</option>
+            <option>Srijeda</option>
+            <option>Četvrtak</option>
+            <option>Petak</option>
+      </select> <br>
+      <button type="submit">Dodaj aktivnost</button>
+    </form> 
+    <h3 id="poruka"></h3>
+</div>
+<script src="ajaxSkripta.js"></script>
+</BODY>
+</HTML>
